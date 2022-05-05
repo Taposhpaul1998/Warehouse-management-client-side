@@ -1,10 +1,11 @@
 import React from 'react';
+import {  Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
     return (
-        <nav className='navBer'>
+        <Navbar style={{background:" #08093ed9"}}>
           <div className="conteiner">
               <div className="navIcon">
                   <h4>Cycle House</h4>
@@ -18,7 +19,7 @@ const Header = () => {
                   <Link to="/signin">SIGNIN</Link>
               </div>
           </div>
-        </nav>
+        </Navbar>
     );
 };
 
