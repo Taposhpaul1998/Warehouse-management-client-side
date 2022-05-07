@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Table } from 'react-bootstrap';
 import useProducts from '../Hooks/UsePorducts/useProducts';
 
-const Allproducts = () => {
+const Manageitem = () => {
     const [products, setProducts] = useProducts();
     console.log(products);
     return (
@@ -31,7 +31,7 @@ const Allproducts = () => {
                                 <td>{product.discripson}</td>
                                 <td>{product.suplier}</td>
                                 <td>{
-                                    <Button variant="primary">Add</Button>
+                                    <Button href='/inventory' variant="primary">Add</Button>
                                 }</td>
                                 <td>{
                                     <Button variant="danger">Delete</Button>
@@ -42,10 +42,10 @@ const Allproducts = () => {
                 </tbody>
             </Table>
             <div style={{ width: '300px' }} className='mx-auto d-black'>
-                <Button className='submit-btn m-4 w-100'>Add New Item</Button>
+                <Button href="/myitems" className='submit-btn m-4 w-100'>Add New Item</Button>
             </div>
         </div>
     );
 };
 
-export default Allproducts;
+export default Manageitem;

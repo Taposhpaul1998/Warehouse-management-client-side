@@ -5,7 +5,7 @@ import './Pricing.css'
 const Pricing = ({ prices }) => {
     const { name, price, orders, organization, detels } = prices;
     return (
-        <div className='pricing-card col-sm-12 col-md-6 col-lg-4'>
+        <div id='pricing' className='pricing-card col-sm-12 col-md-6 col-lg-4'>
             <h2>{name}</h2>
             <h2><p>$</p>{price}</h2>
             <h6>{detels}</h6>

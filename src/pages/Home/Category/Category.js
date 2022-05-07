@@ -9,7 +9,7 @@ const Category = ({ category }) => {
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <h3 style={{ color: "#242768" }}>{name}</h3>
-                    <Button className='w-100 update-btn'>Update</Button>
+                    <Button href='/manageitems' className='w-100 update-btn'>Update</Button>
                 </Card.Body>
             </Card>
         </div>

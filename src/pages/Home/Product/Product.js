@@ -6,7 +6,7 @@ const Product = ({ product }) => {
 
   const { name, img, discripson, price, suplier } = product
   return (
-    <div className='product-card col-sm-12 col-md-6 col-lg-4 g-4 '>
+    <div id='inventory' className='product-card col-sm-12 col-md-6 col-lg-4 g-4 '>
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
@@ -18,7 +18,7 @@ const Product = ({ product }) => {
           </Card.Text>
           <Card.Text> Suplier: {suplier}
           </Card.Text>
-          <Button className='w-100 update-btn'>Update</Button>
+          <Button href="/inventory" className='w-100 update-btn'>Update</Button>
         </Card.Body>
       </Card>
     </div>

@@ -1,7 +1,6 @@
 .conteiner {
-    width: 80%;
     height: 80px;
-    margin: auto;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +10,7 @@
 .navMenu a:hover{
 color: tomato;
 }
-@media  ( max-width: 785px ) {
+@media  ( max-width: 935px ) {
     .navMenu {
 display: none;
     }
