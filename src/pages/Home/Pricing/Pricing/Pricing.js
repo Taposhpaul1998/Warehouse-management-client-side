@@ -11,7 +11,7 @@ const Pricing = ({ prices }) => {
             <h6>{detels}</h6>
             <h6>{organization}</h6>
             <h6>{orders}</h6>
-            <Button className='update-btn w-100 mt-4'>Try Now</Button>
+            <Button href='/pyment' className='update-btn w-100 mt-4'>Try Now</Button>
         </div>
     );
 };
