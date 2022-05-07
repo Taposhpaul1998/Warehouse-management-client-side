@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "FREE",
+        "price": "0",
+        "detels": "per organization / month billed annually",
+        "organization": "$ 0 per organization / month",
+        "orders": "50 orders / month"
+    },
+    {
+        "id": 2,
+        "name": "PROFESSIONA",
+        "price": "99",
+        "detels": "per organization / month billed annually",
+        "organization": "$ 129 per organization / month",
+        "orders": "7500 orders / month"
+    },
+    {
+        "id": 3,
+        "name": "PREMIUM",
+        "price": "159",
+        "detels": "per organization / month billed annually",
+        "organization": "$ 199 per organization / month",
+        "orders": "15000 orders / month"
+    }
+]

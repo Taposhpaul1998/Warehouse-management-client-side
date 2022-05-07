@@ -8,8 +8,8 @@ const Category = ({ category }) => {
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
-                    <h3>{name}</h3>
-                    <Button className='w-100' variant="primary">Update</Button>
+                    <h3 style={{ color: "#242768" }}>{name}</h3>
+                    <Button className='w-100 update-btn'>Update</Button>
                 </Card.Body>
             </Card>
         </div>

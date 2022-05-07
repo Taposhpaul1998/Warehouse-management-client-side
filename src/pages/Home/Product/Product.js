@@ -3,8 +3,8 @@ import { Button, Card } from 'react-bootstrap';
 import './Product.css'
 
 const Product = ({ product }) => {
-  console.log(product);
-  const { name, img, discripson } = product
+
+  const { name, img, discripson, price, suplier } = product
   return (
     <div className='product-card col-sm-12 col-md-6 col-lg-4 g-4 '>
       <Card style={{ width: '18rem' }}>
@@ -14,7 +14,11 @@ const Product = ({ product }) => {
           <Card.Text>
             {discripson}
           </Card.Text>
-          <Button className='w-100' variant="primary">Update</Button>
+          <Card.Text> Price: {price} tk
+          </Card.Text>
+          <Card.Text> Suplier: {suplier}
+          </Card.Text>
+          <Button className='w-100 update-btn'>Update</Button>
         </Card.Body>
       </Card>
     </div>

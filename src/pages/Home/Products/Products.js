@@ -1,34 +1,29 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
 import { CardGroup, Container } from 'react-bootstrap';
+import useProducts from '../../Hooks/UsePorducts/useProducts';
 import Product from '../Product/Product';
 import './Products.css'
 
 const Products = () => {
-    const [products,setProducts]=useState([]);
+    const [products] = useProducts([]);
 
-    useEffect(()=>{
-        fetch('products.json')
-        .then(res=>res.json())
-        .then(data=> setProducts(data))
-    },[])
+    const newProducts = products.slice(0 - 6);
     return (
-      <div className='invetorySection'>
-          <h2>Inventory</h2>
+        <div className='invetorySection'>
+            <h2>Inventory</h2>
             <div className='product-conteiner p-4'>
-           <Container>
-                <CardGroup className='row'>
-            {
-                products.map(product=><Product
-                key={product.id}
-                product={product}
-                ></Product>)
-            }
-            </CardGroup>
-            </Container>
-          
+                <Container>
+                    <CardGroup className='row'>
+                        {
+                            newProducts.map(product => <Product
+                                key={product.id}
+                                product={product}
+                            ></Product>)
+                        }
+                    </CardGroup>
+                </Container>
+
+            </div>
         </div>
-      </div>
     );
 };
 

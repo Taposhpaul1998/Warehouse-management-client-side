@@ -1,15 +1,119 @@
 [
-    {"id":1, "shaplayar":"Duranta", "name":"Duranta Steel 1-Spd Scool-M-20.01-Black", "img":"https://i.ibb.co/cv5BCMR/prd1.jpg", "quantity":20, "discripson":"Frame Size: Steel TIG Welded Frame Fork Steel Suspension Fork. Saddle: Pu Foam Decals Under Clear. Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip/Down Hill Mud","price":11000},
-    {"id":2, "shaplayar":"Duranta", "name":"Duranta Steel 7-Spd Hulk Folding 20 Blue", "img":"https://i.ibb.co/DVNyMkY/prd2.jpg", "quantity":15, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":12000},
-    {"id":3, "shaplayar":"Duranta", "name":"Duranta Steel 7-Spd Recoil 20 Black", "img":"https://i.ibb.co/ZVTznyg/prd3.jpg", "quantity":35, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":11500},
-    {"id":4, "shaplayar":"Duranta", "name":"Duranta Steel 7-Spd Recoil 20 Red", "img":"https://i.ibb.co/jGm0VZp/prd4.jpg", "quantity":40, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":11500},
-    {"id":5, "shaplayar":"Duranta", "name":"Duranta Steel 1-Spd Scool-M-20.10-White", "img":"https://i.ibb.co/DgPHXKb/prd5.jpg", "quantity":45, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":12400},
-    {"id":6, "shaplayar":"Duranta", "name":"Duranta Gladiator Gents bicycle -26", "img":"https://i.ibb.co/569p7sK/prd6.jpg", "quantity":50, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":18000},
-    {"id":7, "shaplayar":"Duranta", "name":"Duranta Recoils Gents Bicycle Black -24", "img":"https://i.ibb.co/BZBdygD/prd7.jpg", "quantity":20, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":17000},
-    {"id":8, "shaplayar":"Duranta", "name":"Duranta Recoils Gents Bicycle Red -24", "img":"https://i.ibb.co/QkBg2qQ/prd8.jpg", "quantity":30, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":17000},
-    {"id":9, "shaplayar":"Duranta", "name":"Duranta Steel 1-Spd Ryan 14 Black", "img":"https://i.ibb.co/hV3xhPK/prd9.jpg", "quantity":30, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":7000},
-    {"id":10, "shaplayar":"Duranta", "name":"Duranta Steel 1-Spd Premier-M-14.01-Orange", "img":"https://i.ibb.co/sJJyg19/prd10.jpg", "quantity":30, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":7500},
-    {"id":11, "shaplayar":"Duranta", "name":"Duranta Steel 1-Spd Premier-M-14.01-Blue", "img":"https://i.ibb.co/5KX3kPq/prd11.jpg", "quantity":30, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":8500},
-    {"id":12, "shaplayar":"Duranta", "name":"Duranta Steel 1-Spd Extreme 12 Blue", "img":"https://i.ibb.co/Tt08PfR/prd12.jpg", "quantity":30, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":8000},
-    {"id":13, "shaplayar":"Duranta", "name":"Duranta Allan Furious 700C Racing Bike", "img":"https://i.ibb.co/Kht4f4K/prd13.jpg", "quantity":30, "discripson":"Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip","price":28000}
+    {
+        "id": 1,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 1-Spd Scool-M-20.01-Black",
+        "img": "https://i.ibb.co/cv5BCMR/prd1.jpg",
+        "quantity": 20,
+        "discripson": "Frame Size: Steel TIG Welded Frame Fork Steel Suspension Fork. Saddle: Pu Foam Decals Under Clear. Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip/Down Hill Mud",
+        "price": 11000
+    },
+    {
+        "id": 2,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 7-Spd Hulk Folding 20 Blue",
+        "img": "https://i.ibb.co/DVNyMkY/prd2.jpg",
+        "quantity": 15,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 12000
+    },
+    {
+        "id": 3,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 7-Spd Recoil 20 Black",
+        "img": "https://i.ibb.co/ZVTznyg/prd3.jpg",
+        "quantity": 35,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 11500
+    },
+    {
+        "id": 4,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 7-Spd Recoil 20 Red",
+        "img": "https://i.ibb.co/jGm0VZp/prd4.jpg",
+        "quantity": 40,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 11500
+    },
+    {
+        "id": 5,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 1-Spd Scool-M-20.10-White",
+        "img": "https://i.ibb.co/DgPHXKb/prd5.jpg",
+        "quantity": 45,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 12400
+    },
+    {
+        "id": 6,
+        "suplier": "Duranta",
+        "name": "Duranta Gladiator Gents bicycle -26",
+        "img": "https://i.ibb.co/569p7sK/prd6.jpg",
+        "quantity": 50,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 18000
+    },
+    {
+        "id": 7,
+        "suplier": "Duranta",
+        "name": "Duranta Recoils Gents Bicycle Black -24",
+        "img": "https://i.ibb.co/BZBdygD/prd7.jpg",
+        "quantity": 20,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 17000
+    },
+    {
+        "id": 8,
+        "suplier": "Duranta",
+        "name": "Duranta Recoils Gents Bicycle Red -24",
+        "img": "https://i.ibb.co/QkBg2qQ/prd8.jpg",
+        "quantity": 30,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 17000
+    },
+    {
+        "id": 9,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 1-Spd Ryan 14 Black",
+        "img": "https://i.ibb.co/hV3xhPK/prd9.jpg",
+        "quantity": 30,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 7000
+    },
+    {
+        "id": 10,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 1-Spd Premier-M-14.01-Orange",
+        "img": "https://i.ibb.co/sJJyg19/prd10.jpg",
+        "quantity": 30,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 7500
+    },
+    {
+        "id": 11,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 1-Spd Premier-M-14.01-Blue",
+        "img": "https://i.ibb.co/5KX3kPq/prd11.jpg",
+        "quantity": 30,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 8500
+    },
+    {
+        "id": 12,
+        "suplier": "Duranta",
+        "name": "Duranta Steel 1-Spd Extreme 12 Blue",
+        "img": "https://i.ibb.co/Tt08PfR/prd12.jpg",
+        "quantity": 30,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 8000
+    },
+    {
+        "id": 13,
+        "suplier": "Duranta",
+        "name": "Duranta Allan Furious 700C Racing Bike",
+        "img": "https://i.ibb.co/Kht4f4K/prd13.jpg",
+        "quantity": 30,
+        "discripson": "Frame Size: Steel TIG Welded Foldable Frame Fork Steel Rigid Fork. Saddle: Pu Foam Decals Under Clear.Brake Lever: Alloy Brake Lever And Plastic Resign Accessories Steel Gear Bell BCP/Soft Grip",
+        "price": 28000
+    }
 ]
