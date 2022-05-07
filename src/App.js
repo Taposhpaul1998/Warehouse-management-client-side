@@ -6,6 +6,7 @@ import Footer from './pages/Footer/Footer';
 import Header from './pages/Header/Header';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login/Login';
+import Signup from './pages/Login/Signup/Signup';
 import Allproducts from './pages/ProductTable/Allproducts'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/invertory" element={<Allproducts></Allproducts>}></Route>
+        <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/signin" element={<Login></Login>}></Route>
         <Route path="/*" element={<Error></Error>}></Route>
       </Routes>

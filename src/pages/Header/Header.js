@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <Navbar style={{ background: " #08093ed9" }}>
+        <Navbar style={{ background: "#242768" }}>
             <div className="conteiner">
                 <div className="navIcon">
                     <h4>Cycle House</h4>

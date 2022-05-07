@@ -16,7 +16,7 @@ const Allproducts = () => {
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Discripson</th>
-                        <th colSpan={5}>Suplier</th>
+                        <th colSpan={3}>Suplier</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,22 +31,19 @@ const Allproducts = () => {
                                 <td>{product.discripson}</td>
                                 <td>{product.suplier}</td>
                                 <td>{
-                                    <Button variant="primary">Primary</Button>
+                                    <Button variant="primary">Add</Button>
                                 }</td>
                                 <td>{
-                                    <Button variant="success">Primary</Button>
-                                }</td>
-                                <td>{
-                                    <Button variant="info">Primary</Button>
-                                }</td>
-                                <td>{
-                                    <Button variant="primary">Primary</Button>
+                                    <Button variant="danger">Delete</Button>
                                 }</td>
                             </tr>
                         ))
                     }
                 </tbody>
             </Table>
+            <div style={{ width: '300px' }} className='mx-auto d-black'>
+                <Button className='submit-btn m-4 w-100'>Add New Item</Button>
+            </div>
         </div>
     );
 };
