@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Error from './pages/Footer/ErrorPage/Error';
 import Footer from './pages/Footer/Footer';
 import Header from './pages/Header/Header';
 import Home from './pages/Home/Home/Home';
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/signin" element={<Login></Login>}></Route>
+        <Route path="/*" element={<Error></Error>}></Route>
       </Routes>
       <Footer></Footer>
     </>
