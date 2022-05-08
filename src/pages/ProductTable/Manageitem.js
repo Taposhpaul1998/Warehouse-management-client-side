@@ -23,7 +23,7 @@ const Manageitem = () => {
                     {
                         products.map(product => (
                             <tr>
-                                <td>{product.id}</td>
+                                <td>{product._id}</td>
                                 <td><img style={{ width: "120px" }} src={product.img} alt="" /></td>
                                 <td>{product.name}</td>
                                 <td>{product.price}</td>
@@ -42,7 +42,7 @@ const Manageitem = () => {
                 </tbody>
             </Table>
             <div style={{ width: '300px' }} className='mx-auto d-black'>
-                <Button href="/myitems" className='submit-btn m-4 w-100'>Add New Item</Button>
+                <Button href="/addedItem" className='submit-btn m-4 w-100'>Add New Item</Button>
             </div>
         </div>
     );

@@ -15,7 +15,7 @@ const Products = () => {
                     <CardGroup className='row'>
                         {
                             newProducts.map(product => <Product
-                                key={product.id}
+                                key={product._id}
                                 product={product}
                             ></Product>)
                         }

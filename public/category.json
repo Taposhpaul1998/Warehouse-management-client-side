@@ -1,10 +1,22 @@
 [
-    {"id":1, "name":"JONYOR BIKES","img":"https://i.ibb.co/zf5PXyp/cat1.jpg"},
-    {"id":2, "name":"KIDS BIKES","img":"https://i.ibb.co/LzYV6M6/cat3.jpg"},
-    {"id":3, "name":"RACCING BIKES","img":"https://i.ibb.co/N1zzfrS/cat4.jpg"},
-    {"id":4, "name":"CLASSIC BIKES","img":"https://i.ibb.co/PYdDwBX/cat6.jpg"}
+    {
+        "id": 1,
+        "name": "JONYOR BIKES",
+        "img": "https://i.ibb.co/zf5PXyp/cat1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "KIDS BIKES",
+        "img": "https://i.ibb.co/LzYV6M6/cat3.jpg"
+    },
+    {
+        "id": 3,
+        "name": "RACCING BIKES",
+        "img": "https://i.ibb.co/N1zzfrS/cat4.jpg"
+    },
+    {
+        "id": 4,
+        "name": "CLASSIC BIKES",
+        "img": "https://i.ibb.co/PYdDwBX/cat6.jpg"
+    }
 ]
-
-
-
-

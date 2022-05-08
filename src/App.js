@@ -24,7 +24,7 @@ function App() {
         <Route path="/manageitems" element={<Manageitem></Manageitem>}></Route>
         <Route path="/addedItem" element={<Additem></Additem>}></Route>
         <Route path="/myitems" element={<Myitem></Myitem>}></Route>
-        <Route path="/inventory" element={<Inventory></Inventory>}></Route>
+        <Route path="/product/:productid" element={<Inventory></Inventory>}></Route>
         <Route path="/pyment" element={<Pyament></Pyament>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/signin" element={<Login></Login>}></Route>
