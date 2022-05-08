@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
 const Inventory = () => {
-    const [agree, setAgree] = useState(false);
+    // const [quntity, setQuntity] = useState([]);
     const { productid } = useParams();
     const [update, setUpdate] = useState([])
 
@@ -13,6 +13,12 @@ const Inventory = () => {
             .then(data => setUpdate(data))
     }, [])
 
+    // const quantity = useRef('');
+    // const hendelUpdate = (e) => {
+    //     const newQuantity = (quantity.current.value);
+    // ref={quantity}  onClick={hendelUpdate}
+
+    // }
 
     return (
         <div>
@@ -25,15 +31,18 @@ const Inventory = () => {
                         <th>{update.price}</th>
                         <th>{update.discripson}</th>
                         <th>{update.quantity}</th>
-                        <th> <Button onClick={() => setAgree(!agree)} variant="primary">Update Products</Button></th>
+                        <th>
+                            <Button className='mb-2' variant="success">Delavery</Button>
+                        </th>
+
 
                     </tr>
                 </thead>
-                <tbody disabled={!agree} className='update'>
+                <tbody className='update'>
                     <tr>
                         <th>Quantity</th>
-                        <th colSpan={3}> <input type="number" /> </th>
-                        <th colSpan={2}> <Button variant="primary">Add</Button> </th>
+                        <th colSpan={3}> <input className='w-100 p-3' type="number" /> </th>
+                        <th colSpan={2}>  <Button variant="primary">Update Products</Button></th>
                     </tr>
                 </tbody>
             </Table>

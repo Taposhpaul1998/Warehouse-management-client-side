@@ -4,7 +4,22 @@ import useProducts from '../Hooks/UsePorducts/useProducts';
 
 const Manageitem = () => {
     const [products, setProducts] = useProducts();
-    console.log(products);
+
+    const hendelDelete = (id) => {
+        const proceed = window.confirm('Are you sure ?')
+        if (proceed) {
+            const url = `http://localhost:5000/products/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    const remaining = products.filter(service => service._id !== id);
+                    setProducts(remaining);
+                })
+        }
+    }
+
     return (
         <div>
             <Table striped bordered hover variant="dark">
@@ -34,7 +49,7 @@ const Manageitem = () => {
                                     <Button href='/inventory' variant="primary">Add</Button>
                                 }</td>
                                 <td>{
-                                    <Button variant="danger">Delete</Button>
+                                    <Button onClick={() => hendelDelete(product._id)} variant="danger">Delete</Button>
                                 }</td>
                             </tr>
                         ))
