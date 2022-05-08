@@ -3,6 +3,7 @@ import { Button, Table } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
 const Inventory = () => {
+    const [agree, setAgree] = useState(false);
     const { productid } = useParams();
     const [update, setUpdate] = useState([])
 
@@ -11,6 +12,7 @@ const Inventory = () => {
             .then(res => res.json())
             .then(data => setUpdate(data))
     }, [])
+
 
     return (
         <div>
@@ -23,11 +25,19 @@ const Inventory = () => {
                         <th>{update.price}</th>
                         <th>{update.discripson}</th>
                         <th>{update.quantity}</th>
-                        <th> <Button href='/inventory' variant="primary">Update Products</Button></th>
+                        <th> <Button onClick={() => setAgree(!agree)} variant="primary">Update Products</Button></th>
 
                     </tr>
                 </thead>
+                <tbody disabled={!agree} className='update'>
+                    <tr>
+                        <th>Quantity</th>
+                        <th colSpan={3}> <input type="number" /> </th>
+                        <th colSpan={2}> <Button variant="primary">Add</Button> </th>
+                    </tr>
+                </tbody>
             </Table>
+
 
             <div style={{ width: '300px' }} className='mx-auto d-black'>
                 <Button href="/manageitems" className='submit-btn m-4 w-100'>Manage Item</Button>
