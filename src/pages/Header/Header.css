@@ -17,7 +17,7 @@
     margin-left: 234px;
 }
 
-.navMenu .active {
+.active {
     display: grid;
     grid-template-rows: auto;
     background-color: #242768;
@@ -28,14 +28,14 @@
     padding: 17px;
 }
 
-.navMenu .active a {
+.active a {
     text-decoration: none;
     color: white;
     padding-bottom: 10px;
     font-weight: 500;
 }
 
-.navMenu .active a:hover {
+.active a:hover {
     color: tomato;
 }
 

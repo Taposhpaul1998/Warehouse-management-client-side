@@ -8,7 +8,7 @@ const Inventory = () => {
     const [update, setUpdate] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productid}`, {
+        fetch(`https://lit-harbor-42660.herokuapp.com/products/${productid}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }

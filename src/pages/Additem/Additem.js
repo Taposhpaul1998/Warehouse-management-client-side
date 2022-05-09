@@ -8,7 +8,7 @@ const Additem = () => {
     const [user] = useAuthState(auth);
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/products`;
+        const url = `https://lit-harbor-42660.herokuapp.com/products`;
         fetch(url, {
             method: 'POST',
             headers: {

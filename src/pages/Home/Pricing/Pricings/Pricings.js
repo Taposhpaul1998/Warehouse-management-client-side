@@ -7,7 +7,7 @@ import './Pricings.css'
 const Pricings = () => {
     const [pricing, setPricing] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/pricing')
+        fetch('https://lit-harbor-42660.herokuapp.com/pricing')
             .then(res => res.json())
             .then(data => setPricing(data))
     }, [])
