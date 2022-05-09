@@ -7,7 +7,7 @@ import './Pricings.css'
 const Pricings = () => {
     const [pricing, setPricing] = useState([]);
     useEffect(() => {
-        fetch('pricing.json')
+        fetch('http://localhost:5000/pricing')
             .then(res => res.json())
             .then(data => setPricing(data))
     }, [])

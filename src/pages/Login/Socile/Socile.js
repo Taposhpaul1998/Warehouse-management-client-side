@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebaseinit';
+import Loding from '../../Loding/Loding';
 
 
 const Socile = () => {
@@ -10,7 +11,9 @@ const Socile = () => {
     const [signInWithGithub, user2, loading2, error2] = useSignInWithGithub(auth);
     const navigate = useNavigate();
     let errorElement;
-
+    if (loading || loading2) {
+        return <Loding></Loding>
+    }
     if (error || error2) {
         errorElement = <p className="text-danger">Error:{error?.message} {error2?.message}</p>
     }

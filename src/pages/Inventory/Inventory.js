@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Inventory = () => {
     // const [quntity, setQuntity] = useState([]);
@@ -8,17 +8,14 @@ const Inventory = () => {
     const [update, setUpdate] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productid}`)
+        fetch(`http://localhost:5000/products/${productid}`, {
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
             .then(res => res.json())
             .then(data => setUpdate(data))
     }, [])
-
-    // const quantity = useRef('');
-    // const hendelUpdate = (e) => {
-    //     const newQuantity = (quantity.current.value);
-    // ref={quantity}  onClick={hendelUpdate}
-
-    // }
 
     return (
         <div>
@@ -49,7 +46,7 @@ const Inventory = () => {
 
 
             <div style={{ width: '300px' }} className='mx-auto d-black'>
-                <Button href="/manageitems" className='submit-btn m-4 w-100'>Manage Item</Button>
+                <Button to="/manageitems" as={Link} className='submit-btn m-4 w-100'>Manage Item</Button>
             </div>
         </div >
     );

@@ -5,6 +5,10 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebaseinit';
 import Socile from '../Socile/Socile';
 import './Login.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
+import Loding from '../../Loding/Loding';
 
 const Login = () => {
 
@@ -22,18 +26,21 @@ const Login = () => {
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
   let errorElement;
-
+  if (loading) {
+    return <Loding></Loding>
+  }
   if (error) {
     errorElement = <p className="text-danger">Error:{error?.message}</p>
   }
-  if (user) {
-    navigate(from, { replace: true })
-  }
-  const handelSubmit = (e) => {
+
+  const handelSubmit = async (e) => {
     e.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    signInWithEmailAndPassword(email, password);
+    await signInWithEmailAndPassword(email, password);
+    const { data } = await axios.post('http://localhost:5000/singin', { email });
+    localStorage.setItem('accessToken', data.accessToken);
+    navigate(from, { replace: true })
   }
   const navigateRegister = (e) => {
     navigate('/signup')
@@ -41,7 +48,7 @@ const Login = () => {
   const resetPassword = async () => {
     const email = emailRef.current.value;
     await sendPasswordResetEmail(email);
-    alert('Sent email');
+    toast('Sent email');
   }
 
 
@@ -73,6 +80,7 @@ const Login = () => {
           <p>Forgotten password? <span onClick={resetPassword} className='text-primary user-select-none'>Reset password</span></p>
         </Form.Group>
       </Form>
+      <ToastContainer />
       <Socile></Socile>
     </div>
   );

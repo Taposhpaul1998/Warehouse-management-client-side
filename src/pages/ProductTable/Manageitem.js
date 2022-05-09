@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useProducts from '../Hooks/UsePorducts/useProducts';
 
 const Manageitem = () => {
@@ -14,7 +15,7 @@ const Manageitem = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    const remaining = products.filter(service => service._id !== id);
+                    const remaining = products.filter(product => product._id !== id);
                     setProducts(remaining);
                 })
         }
@@ -57,7 +58,7 @@ const Manageitem = () => {
                 </tbody>
             </Table>
             <div style={{ width: '300px' }} className='mx-auto d-black'>
-                <Button href="/addedItem" className='submit-btn m-4 w-100'>Add New Item</Button>
+                <Button to="/addedItem" as={Link} className='submit-btn m-4 w-100'>Add New Item</Button>
             </div>
         </div>
     );

@@ -8,7 +8,6 @@ const Product = ({ product }) => {
   const { name, img, discripson, price, suplier, _id } = product;
   const navigate = useNavigate();
   const handelUpdate = (id) => {
-    console.log(id);
     navigate(`/product/${id}`)
   }
 

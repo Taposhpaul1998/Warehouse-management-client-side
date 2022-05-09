@@ -40,7 +40,7 @@ function App() {
           <RequireAuth><Pyament></Pyament></RequireAuth>
         }></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
-        <Route path="/signin" element={<Login></Login>}></Route>
+        <Route path="/singin" element={<Login></Login>}></Route>
         <Route path="/*" element={<Error></Error>}></Route>
       </Routes>
       <Footer></Footer>
